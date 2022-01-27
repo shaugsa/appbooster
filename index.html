@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <title>Appboosters test</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="inner">
+            <div class="header">
+                <div class="right-side">
+                    <div class="header__search">
+                        <input class="btn btn-search" placeholder="Поиск по запросу" type="text">
+                    </div>
+    
+                    <div class=" header__twobuttons">
+                        <button class="btn btn-primary btn-primary__right" type="button">
+                            iPhone/iPod
+                        </button>
+                        <button class="btn btn-primary btn-primary__left" type="button">
+                            iPad
+                        </button>
+                    </div>
+                 </div> 
+                <div class="left-side">
+                    <button class="btn left-side__btn left-side__btn--dowload">
+                        Скачать .CSV
+                    </button>
+    
+                    <button class="btn left-side__btn left-side__btn--addReq" id='addBtn'>
+                        Добавить запрос
+                    </button>
+                </div>
+            </div> <!--/.header-->
+
+            <!-- Status -->
+            <div class="status__inner">
+                 <div class="status-wrap">
+                    <div class="status-wrap__suptitle">
+
+                        <div class="status-top">
+                            <div class="status-top__persent">45 % в</div>
+                            <div class="status-top__top">ТОП-3</div>
+                        </div>
+
+                        <div class="status-suptitle">
+                            <img class="status-suptitle__img" src="images/suptitle_img.svg" alt="img">
+                            <p class="status-suptitle__text">
+                                Вы недополучаете 450 инсталлов в день
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+            </div> <!--/.status__inner-->
+ 
+
+            <!-- TABLE -->
+            <div class="table__inner">
+                <div class="form">
+                    <form action="/">
+                        <table class="table" id='table'>
+
+                            <tr class = 'column'>
+                                <td class=" cell table__main-column table__main-column--first table__main-line">
+                                    <input type="checkbox" class="custom-checkbox" id="main-checkbox" name="main-checkbox" value='yes'  />
+                                    <label for="main-checkbox"></label>
+                                    <img class="table__icon" id="delete" src="images/trash.svg" alt="delete">
+                                    <img class="table__icon" src="images/reload.svg"  id="reload" alt="reload">
+                                    <img class="table__icon" src="images/rocket.svg" alt="addColumn" id="addColumn" >
+                                </td>
+                                <td class="cell table__main-column table__main-column--second table__main-line">
+                                    <span class="table__text">
+                                        Оценка частотнсти
+                                    </span>
+                                    <img class="table_icon" src="images/arrow_th.svg" alt="arrow" id="arrow">
+                                </td>
+                                <td class="cell table__main-line table__main-date">
+                                    <p class="date"> 25.06</p>
+                                </td>
+                            </tr>
+
+                            <!-- First item  -->
+                            <tr class="item item__first column" > 
+                                <td class="cell table__main-column">
+                                        <input type="checkbox" class="custom-checkbox checkBoxAll" id="checkbox-first" name="custom" value='yes'  />
+                                        <label for="checkbox-first" class='label'>Тинькофф банк отзывы</label>
+                                    <img class="cell-star" id="firts_star" src="images/Star.svg" alt="star">
+                                    <img class="cell-arrow" src="images/arrow.svg" alt="arrow">
+                                </td>
+                                <td class="cell table__main-column--second">
+                                    <span class="number">2750</span>
+                                </td>
+                                <td class="cell data">
+                                    <div class="data__down">
+                                        <img class="img__arrow-down" src="images/arrow_down.svg" alt="">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="data__main">
+                                        <p>62</p>
+                                    </div>
+                                    <div class="data__growth">
+                                        <p>30</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- second item -->
+                            <tr class="item item__first column" > 
+                                <td class="cell table__main-column">
+                                        <input type="checkbox" class="custom-checkbox checkBoxAll" id="checkbox_second" name="custom" value='yes'  />
+                                        <label for="checkbox_second" class='label'>Тинькофф банк</label>
+                                    <img class="cell-star"  src="images/Star.svg" alt="star">
+                                    <img class="cell-arrow" src="images/arrow.svg" alt="arrow">
+                                </td>
+                                <td class="cell table__main-column--second">
+                                    <span class="number">2750</span>
+                                </td>
+                                <td class="cell data">
+                                    <div class="data__down">
+                                        <img class="img__arrow-down" src="images/arrow_down.svg" alt="">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="data__main">
+                                        <p>62</p>
+                                    </div>
+                                    <div class="data__growth">
+                                        <p>30</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!--  third item -->
+                            <tr class="item item__first column" > 
+                                <td class="cell table__main-column">
+                                        <input type="checkbox" class="custom-checkbox checkBoxAll" id="checkbox_third" name="custom" value='yes'  />
+                                        <label for="checkbox_third" class='label'>Тинькофф банк</label>
+                                    <img class="cell-star"  src="images/Star.svg" alt="star">
+                                    <img class="cell-arrow" src="images/arrow.svg" alt="arrow">
+                                </td>
+                                <td class="cell table__main-column--second">
+                                    <span class="number">2750</span>
+                                </td>
+                                <td class="cell data">
+                                    <div class="data__down">
+                                        <img class="img__arrow-down" src="images/arrow_down.svg" alt="">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="data__main">
+                                        <p>62</p>
+                                    </div>
+                                    <div class="data__growth">
+                                        <p>30</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- fourth item -->
+                            <tr class="item item__first column" > 
+                                <td class="cell table__main-column">
+                                        <input type="checkbox" class="custom-checkbox checkBoxAll" id="checkbox_fourth" name="custom" value='yes'  />
+                                        <label for="checkbox_fourth" class='label'>Тинькофф банк</label>
+                                    <img class="cell-star"  src="images/Star.svg" alt="star">
+                                    <img class="cell-arrow" src="images/arrow.svg" alt="arrow">
+                                </td>
+                                <td class="cell table__main-column--second">
+                                    <span class="number">2750</span>
+                                </td>
+                                <td class="cell data">
+                                    <div class="data__down">
+                                        <img class="img__arrow-down" src="images/arrow_down.svg" alt="">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="data__main">
+                                        <p>62</p>
+                                    </div>
+                                    <div class="data__growth">
+                                        <p>30</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- sixth iten -->
+                            <tr class="item item__first column" > 
+                                <td class="cell table__main-column">
+                                        <input type="checkbox" class="custom-checkbox checkBoxAll" id="checkbox_sixth" name="custom" value='yes'  />
+                                        <label for="checkbox_sixth" class='label'>Тинькофф банк</label>
+                                    <img class="cell-star" src="images/Star.svg" alt="star">
+                                    <img class="cell-arrow" src="images/arrow.svg" alt="arrow">
+                                </td>
+                                <td class="cell table__main-column--second">
+                                    <span class="number">2750</span>
+                                </td>
+                                <td class="cell data">
+                                    <div class="data__down">
+                                        <img class="img__arrow-down" src="images/arrow_down.svg" alt="">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="data__main">
+                                        <p>62</p>
+                                    </div>
+                                    <div class="data__growth">
+                                        <p>30</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- seventh item -->
+                            <tr class="item item__first column" > 
+                                <td class="cell table__main-column">
+                                        <input type="checkbox" class="custom-checkbox checkBoxAll" id="checkbox_seventh" name="custom" value='yes'  />
+                                        <label for="checkbox_seventh" class='label'>Тинькофф банк</label>
+                                    <img class="cell-star" id="second_star" src="images/Star.svg" alt="star">
+                                    <img class="cell-arrow" src="images/arrow.svg" alt="arrow">
+                                </td>
+                                <td class="cell table__main-column--second">
+                                    <span class="number">2750</span>
+                                </td>
+                                <td class="cell data">
+                                    <div class="data__down">
+                                        <img class="img__arrow-down" src="images/arrow_down.svg" alt="">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="data__main">
+                                        <p>62</p>
+                                    </div>
+                                    <div class="data__growth">
+                                        <p>30</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- eigth item -->
+                            <tr class="item item__first column" > 
+                                <td class="cell table__main-column">
+                                        <input type="checkbox" class="custom-checkbox checkBoxAll" id="checkbox_eigth" name="custom" value='yes'  />
+                                        <label for="checkbox_eigth" class='label'>Тинькофф банк</label>
+                                    <img class="cell-star" src="images/Star.svg" alt="star">
+                                    <img class="cell-arrow" src="images/arrow.svg" alt="arrow">
+                                </td>
+                                <td class="cell table__main-column--second">
+                                    <span class="number">2750</span>
+                                </td>
+                                <td class="cell data">
+                                    <div class="data__down">
+                                        <img class="img__arrow-down" src="images/arrow_down.svg" alt="">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="data__main">
+                                        <p>62</p>
+                                    </div>
+                                    <div class="data__growth">
+                                        <p>30</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+        </div>
+
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
